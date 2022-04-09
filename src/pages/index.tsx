@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import { Banner } from 'components/Banner/'
+
+import { Games } from 'components/Games'
+import { Banner } from 'components/Banner'
 
 export default function Home() {
   return (
@@ -8,7 +10,7 @@ export default function Home() {
         <title>Blizzard</title>
       </Head>
       <Banner />
-      {/* <h1>continuandooooo</h1> */}
+      <Games />
     </>
   )
 }
