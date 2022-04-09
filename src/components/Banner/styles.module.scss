@@ -21,10 +21,152 @@
 }
 
 .content {
-  position: relative;
   z-index: 2;
+  width: inherit;
+  height: inherit;
+  position: relative;
 
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+
+.information {
+  display: flex;
+  align-items: flex-start;
+
+  margin: auto;
+
+  width: 100%;
+  max-width: 1266px;
+}
+
+.information__images {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  img {
+    width: 48px;
+    height: auto;
+
+    transition: transform 0.4s;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.information__text {
+  margin-left: 174px;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 562px;
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4.375rem;
+  }
+
+  p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.005em;
+    margin: 16px 0 32px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 0;
+    border-radius: 4px;
+    background: var(--link);
+
+    width: 168px;
+    height: 52px;
+
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+
+    transition: filter 0.4s;
+
+    &:hover {
+      filter: brightness(0.92);
+    }
+  }
+}
+
+.information__game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  img {
+    width: 280px;
+    height: auto;
+  }
+
+  strong {
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    margin: 112px 0 16px;
+  }
+}
+
+.trailer {
+  width: 280px;
+  height: 158px;
+
+  position: relative;
+  overflow: hidden;
+
+  button {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    border-radius: 50%;
+    background: linear-gradient(136.72deg, rgba(7, 7, 10, 0.86) 19.22%, rgba(15, 16, 22, 0.5) 76.59%);
+
+    opacity: 0;
+    transform: translateY(40px);
+
+    transition: all 0.4s;
+
+    svg {
+      width: 16px;
+      height: auto;
+      margin: auto;
+    }
+  }
+
+  img {
+    object-fit: cover;
+    transition: all 0.4s;
+  }
+
+  &:hover {
+    button {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      filter: blur(0.5px);
+      transform: scale(1.1);
+    }
+  }
 }
