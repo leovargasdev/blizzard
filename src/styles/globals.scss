@@ -15,19 +15,23 @@ html {
 }
 
 :root {
-  --background: #f5f6fa;
+  --background: #020203;
 
-  --primary: #373D4F;
-  --secondary: #9098AE;
+  --primary: #fff ;
+  --secondary: #8F9199;
+  --tertiary: #E5E5E5;
+  --quartenary: #828792;
+
+  --link: #00AEFF; 
 }
 
-body {
+body { 
   background: var(--background);
 }
 
 body, button, textarea, input {
   color: var(--primary);
-  font: 400 1rem "Roboto", sans-serif;
+  font: 400 1rem "Poppins", sans-serif;
 }
 
 a {
