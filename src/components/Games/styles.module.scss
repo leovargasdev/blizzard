@@ -72,3 +72,42 @@
     }
   }
 }
+
+.games {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 44px 28px;
+}
+
+.game {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  span {
+    width: 100%;
+    height: 422px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  strong {
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    color: var(--tertiary);
+    font-weight: 600;
+
+    margin: 18px 0 4px;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.375rem;
+    color: var(--tertiary);
+  }
+}

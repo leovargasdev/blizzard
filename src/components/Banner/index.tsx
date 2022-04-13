@@ -8,11 +8,11 @@ export const Banner = () => (
       <Header />
       <div className={styles.information}>
         <div className={styles.information__images}>
-          <img src="/games/game-1.png" alt="" />
-          <img src="/games/game-2.png" alt="" />
-          <img src="/games/game-3.png" alt="" />
-          <img src="/games/game-4.png" alt="" />
-          <img src="/games/game-5.png" alt="" />
+          <img src="/logo-games/game-1.png" alt="" />
+          <img src="/logo-games/game-2.png" alt="" />
+          <img src="/logo-games/game-3.png" alt="" />
+          <img src="/logo-games/game-4.png" alt="" />
+          <img src="/logo-games/game-5.png" alt="" />
         </div>
 
         <div className={styles.information__text}>

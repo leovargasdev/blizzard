@@ -8,6 +8,8 @@ import {
   IconXbox
 } from 'static'
 
+import games from 'data/games.json'
+
 import styles from './styles.module.scss'
 
 export const Games = () => (
@@ -32,7 +34,17 @@ export const Games = () => (
         </Link>
       </div>
 
-      <h1>olar</h1>
+      <div className={styles.games}>
+        {games.map(game => (
+          <div className={styles.game} key={game.name}>
+            <span>
+              <img src={game.image} alt={`Imagem do jogo ${game.name}`} />
+            </span>
+            <strong>{game.name}</strong>
+            <p>{game.category}</p>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 )
