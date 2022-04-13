@@ -4,6 +4,7 @@ import IconLink from './icons/link.svg'
 import IconNintendo from './icons/nintendo.svg'
 import IconPlay from './icons/play.svg'
 import IconPlaystation from './icons/playstation.svg'
+import IconPoints from './icons/points.svg'
 import IconUser from './icons/user.svg'
 import IconXbox from './icons/xbox.svg'
 
@@ -14,6 +15,7 @@ export {
   IconNintendo,
   IconPlay,
   IconPlaystation,
+  IconPoints,
   IconUser,
   IconXbox
 }

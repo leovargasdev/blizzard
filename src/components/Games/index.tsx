@@ -5,6 +5,7 @@ import {
   IconLink,
   IconNintendo,
   IconPlaystation,
+  IconPoints,
   IconXbox
 } from 'static'
 
@@ -44,6 +45,13 @@ export const Games = () => (
             <p>{game.category}</p>
           </div>
         ))}
+        <div className={styles['more-games']}>
+          <img src="/logo.png" alt="Logo da blizzard" />
+          <a href="">
+            <IconPoints />
+            Ver todos os jogos
+          </a>
+        </div>
       </div>
     </div>
   </section>
