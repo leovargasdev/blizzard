@@ -6,7 +6,7 @@ export const Banner = () => (
   <section className={styles.container}>
     <div className={styles.content}>
       <Header />
-      {/* <div className={styles.information}>
+      <div className={styles.information}>
         <div className={styles.information__images}>
           <img src="/logo-games/game-1.png" alt="" />
           <img src="/logo-games/game-2.png" alt="" />
@@ -32,7 +32,7 @@ export const Banner = () => (
             </button>
           </div>
         </div>
-      </div> */}
+      </div>
     </div>
   </section>
 )

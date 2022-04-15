@@ -39,29 +39,29 @@ export const Header = () => {
             <li className={activeNavItem === 'games' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('games')}>
                 Jogos
-                {/* <IconArrowDown /> */}
+                <IconArrowDown />
               </span>
-              {/* <ul className={styles.dropdown}>
+              <ul className={styles.dropdown}>
                 {GAMES.map(game => (
                   <li key={game} className={styles.dropdown__item}>
                     {game}
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </li>
             <li className={activeNavItem === 'e-sports' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('e-sports')}>
                 E-sportes
-                {/* <IconArrowDown /> */}
+                <IconArrowDown />
               </span>
 
-              {/* <ul className={styles.dropdown}>
+              <ul className={styles.dropdown}>
                 {SPORTS.map(sport => (
                   <li key={sport} className={styles.dropdown__item}>
                     {sport}
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </li>
             <li>
               <span>Loja</span>
