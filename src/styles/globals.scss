@@ -27,6 +27,22 @@ html {
 
 body { 
   background: var(--background);
+
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  /* Track */
+  &::-webkit-scrollbar-tracke {
+    background: transparent;
+    border-radius: 0.25rem;
+  }
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: var(--quartenary);
+    border-radius: 0.375rem;
+  }
 }
 
 body, button, textarea, input {

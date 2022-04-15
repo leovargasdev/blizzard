@@ -83,6 +83,9 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  
+  overflow: hidden;
+  position: relative;
 
   span {
     width: 100%;
@@ -94,8 +97,36 @@
       border-radius: 4px;
 
       object-fit: cover;
+      // animation-delay:;
+      transition: all 0.4s;
     }
   }
+
+  &:hover {
+    cursor: pointer;
+
+    span img {
+      filter: grayscale(0);
+      transform: scale(1.2);
+    }
+
+    .game__description {
+      transform: translateY(0);
+    }
+  }
+}
+
+.game__description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+
+  transition: transform 0.4s 0.2s;
+  transform: translateY(100px);
 
   strong {
     font-size: 1.25rem;
@@ -103,7 +134,7 @@
     color: var(--tertiary);
     font-weight: 600;
 
-    margin: 18px 0 4px;
+    margin-bottom: 6px;
   }
 
   p {

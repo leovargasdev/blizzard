@@ -41,8 +41,10 @@ export const Games = () => (
             <span>
               <img src={game.image} alt={`Imagem do jogo ${game.name}`} />
             </span>
-            <strong>{game.name}</strong>
-            <p>{game.category}</p>
+            <div className={styles.game__description}>
+              <strong>{game.name}</strong>
+              <p>{game.category}</p>
+            </div>
           </div>
         ))}
         <div className={styles['more-games']}>
