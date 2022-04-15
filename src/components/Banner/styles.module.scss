@@ -101,6 +101,10 @@
       filter: brightness(0.92);
     }
   }
+
+  @media(max-width: 1080px) {
+    margin-left: 60px;
+  }
 }
 
 .information__game {
@@ -120,6 +124,12 @@
     text-transform: uppercase;
 
     margin: 112px 0 16px;
+  }
+
+  @media(max-width: 1080px) {
+    strong {
+      margin: 60px 0 16px;
+    }
   }
 }
 

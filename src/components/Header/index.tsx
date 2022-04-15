@@ -21,6 +21,7 @@ const SPORTS = [
 type NavItemKeyProps = 'games' | 'e-sports' | ''
 
 export const Header = () => {
+  const [toggleActive, setToggleActive] = useState<boolean>(false)
   const [activeNavItem, setActiveNavItem] = useState<NavItemKeyProps>('')
 
   const handleActiveNavItem = (navItemKey: NavItemKeyProps): void => {
@@ -33,36 +34,44 @@ export const Header = () => {
       <div className={styles.content}>
         <img src="/logo.png" alt="Logo da Blizzard" />
 
-        <nav>
+        <nav className={toggleActive ? styles.active : ''}>
           <ul className={styles.navigation}>
             <li className={activeNavItem === 'games' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('games')}>
-                Jogos <IconArrowDown />
+                Jogos
+                {/* <IconArrowDown /> */}
               </span>
-              <ul className={styles.dropdown}>
+              {/* <ul className={styles.dropdown}>
                 {GAMES.map(game => (
                   <li key={game} className={styles.dropdown__item}>
                     {game}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
             <li className={activeNavItem === 'e-sports' ? styles.active : ''}>
               <span onClick={() => handleActiveNavItem('e-sports')}>
-                E-sportes <IconArrowDown />
+                E-sportes
+                {/* <IconArrowDown /> */}
               </span>
 
-              <ul className={styles.dropdown}>
+              {/* <ul className={styles.dropdown}>
                 {SPORTS.map(sport => (
                   <li key={sport} className={styles.dropdown__item}>
                     {sport}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </li>
-            <li>Loja</li>
-            <li>Notícias</li>
-            <li>Suporte </li>
+            <li>
+              <span>Loja</span>
+            </li>
+            <li>
+              <span>Notícias</span>
+            </li>
+            <li>
+              <span>Suporte</span>
+            </li>
           </ul>
         </nav>
 
@@ -70,6 +79,17 @@ export const Header = () => {
           <button type="button">Criar conta</button>
           <button type="button">Logar</button>
         </div>
+
+        <button
+          className={`${styles.menu__toggle} ${
+            toggleActive ? styles.active : ''
+          }`}
+          onClick={() => setToggleActive(state => !state)}
+        >
+          <span />
+          <span />
+          <span />
+        </button>
       </div>
     </header>
   )

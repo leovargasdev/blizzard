@@ -9,6 +9,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media(max-width: 1080px) {
+    padding-left: 24px;
+  }
 }
 
 .image-ilustration {
@@ -22,6 +26,12 @@
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto;
+
+  @media(max-width: 1080px) {
+    margin: 0;
+    background-position: right 350px, right center;
+    background-size: 700px, 900px;
+  }
 }
 
 .information {
@@ -105,36 +115,30 @@
       filter: brightness(0.96);
     }
   }
+}
 
-  .download-mobile {
-    display: flex;
-    align-items: center;
-    column-gap: 18px;
+.download-mobile {
+  display: flex;
+  align-items: center;
+  column-gap: 18px;
 
-    svg {
-      width: 14px;
-      height: auto;
-      color: var(--primary)
-    }
+  svg {
+    width: 14px;
+    height: auto;
+    color: var(--primary)
+  }
 
-    p {
-      font-size: 0.875rem;
-      line-height: 1.375rem;
-      font-weight: 600;
-      color: var(--tertiary);
+  p {
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+    font-weight: 600;
+    color: var(--tertiary);
 
-      width: 100%;
-      max-width: 238px;
+    width: 100%;
+    max-width: 238px;
 
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    @media(max-width: 768px) {
-      p {
-        max-width: 100%;
-      }
+    a {
+      text-decoration: underline;
     }
   }
 }

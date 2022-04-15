@@ -3,6 +3,7 @@
   width: 100%;
 
   margin-top: 85px; 
+  padding: 0 24px;
 
   > div {
     width: 100%;
@@ -77,6 +78,10 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 44px 28px;
+
+  @media(max-width: 1080px) {
+    gap: 28px 20px;
+  }
 }
 
 .game {
@@ -99,6 +104,12 @@
       object-fit: cover;
       // animation-delay:;
       transition: all 0.4s;
+    }
+  }
+
+  @media(max-width: 1080px) {
+    span {
+      height: 350px;
     }
   }
 
@@ -126,7 +137,7 @@
   background: rgba(0, 0, 0, 0.7);
 
   transition: transform 0.4s 0.2s;
-  transform: translateY(100px);
+  transform: translateY(120px);
 
   strong {
     font-size: 1.25rem;
