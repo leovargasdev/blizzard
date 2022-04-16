@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
       <Banner />
       <Games />
-      {/* <Download /> */}
+      <Download />
     </>
   )
 }
