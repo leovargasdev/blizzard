@@ -1,5 +1,7 @@
 import { Header } from 'components/Header'
+
 import { IconPlay } from 'static'
+
 import styles from './styles.module.scss'
 
 export const Banner = () => (

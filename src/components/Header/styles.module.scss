@@ -2,6 +2,8 @@
   display: flex;
   justify-content: center;
 
+  z-index: 3;
+
   width: 100%;
   padding: 28px 24px;
   border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -28,7 +30,7 @@
     nav {
       position: fixed;
       inset: 0;
-      background: rgba(0, 0, 0, 0.7);
+      background: rgba(0, 0, 0, 0.85);
       
       width: 100%;
       height: 100vh;
@@ -45,7 +47,7 @@
       width: 86px;
       height: auto;
       margin-right: auto;
-      z-index: 2;
+      z-index: 4;
     }
   }
 }
@@ -108,7 +110,7 @@
   position: absolute;
   top: 32px;
   left: 0;
-  z-index: 2;
+  z-index: 4;
 
   width: 200px;
   height: auto;
@@ -206,6 +208,11 @@
       }
     }
   }
+
+  @media(max-width: 650px) {
+    display: none;
+    visibility: hidden;
+  }
 }
 
 .menu__toggle {
@@ -216,7 +223,7 @@
   align-items: stretch;
   row-gap: 10px;
 
-  z-index: 2;
+  z-index: 4;
   width: 28px;
   margin-left: 48px;
   background: transparent;
