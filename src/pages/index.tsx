@@ -11,8 +11,8 @@ export default function Home() {
         <title>Blizzard</title>
       </Head>
       <Banner />
-      {/* <Games />
-      <Download /> */}
+      <Games />
+      {/* <Download /> */}
     </>
   )
 }

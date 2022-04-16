@@ -18,6 +18,19 @@
     opacity: 0.5;
     background: radial-gradient(73.1% 73.1% at 52.6% 25.14%, rgba(2, 2, 3, 0) 0%, #020203 71.1%);
   }
+
+  &:before {
+    content: '';
+    position: absolute;
+
+    left: 0;
+    top: 100vh;
+    background: var(--link);
+
+    width: 200px;
+    height: 2px;
+    z-index: 4;
+  }
 }
 
 .content {
