@@ -27,9 +27,13 @@
     top: 100vh;
     background: var(--link);
 
-    width: 200px;
+    width: 0;
     height: 2px;
     z-index: 4;
+
+    @media(max-width: 650px) {
+      width: 200px;
+    }
   }
 }
 

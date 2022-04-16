@@ -14,10 +14,13 @@
     padding-left: 24px;
   }
 
+  @media(max-width: 768px) {
+    height: auto;
+  }
+
   @media(max-width: 650px) {
     padding-top: 48px;
     padding-left: 0;
-    height: auto;
   }
 }
 
@@ -40,7 +43,8 @@
   }
 
   @media(max-width: 768px) {
-    background-position: 420px 350px, 230px 130px;
+    min-height: 100vh;
+    background-position: 350px bottom, 160px bottom;
   }
 
   @media(max-width: 650px) {
@@ -195,13 +199,13 @@
     a {
       text-decoration: underline;
     }
+    
+    @media(max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   @media(max-width: 650px) {
     column-gap: 8px;
-
-    p {
-      max-width: 100%;
-    }
   }
 }
